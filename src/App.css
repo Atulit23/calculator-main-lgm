@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.calc__digit {
+  font-size: 1rem;
+  padding: 1.1rem 1.5rem 1.1rem 1.5rem;
+  border: none;
+  /* margin-left: 1rem; */
+  margin: 0.3rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  color: white;
+  background: #282828;
+  box-shadow: 0px 0px 12px black;
+  color: #00dce4;
+  text-shadow: 0px 0px 4px #00dce4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator__main {
+  width: 21%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 10rem;
+  border-radius: 0.6rem;
+  text-align: -webkit-center;
+  align-items: center;
+  background: #282828;
+  padding: 1.5rem 0rem 1.5rem 0rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calc__main {
+  width: 90%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator__board {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  width: 100%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.val {
+  background: whitesmoke;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  width: 59%;
+  text-align: start;
+}
+
+.ac {
+  border: none;
+  padding: 1.1rem 0.85rem 1.1rem 0.85rem;
+  font-size: 1rem;
+  height: -webkit-fill-available;
+  margin-left: 0.3rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  background: #00dce4;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  box-shadow: 0px 0px 5px #00dce4;
+  text-shadow: 0px 0px 3px white;
 }
